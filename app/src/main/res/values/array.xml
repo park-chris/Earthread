@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_array">
+        <item>카테고리를 선택하여 주세요.</item>
+        <item>전체</item>
+        <item>정치</item>
+        <item>경제</item>
+        <item>사회</item>
+        <item>생활/문화</item>
+        <item>IT/과학</item>
+        <item>반려동물</item>
+        <item>애니/웹툰</item>
+        <item>썸/연애</item>
+        <item>고민</item>
+        <item>패션/뷰티</item>
+        <item>연예/가쉽</item>
+        <item>운동</item>
+        <item>공부</item>
+        <item>주식/투자</item>
+        <item>맛집</item>
+        <item>여행</item>
+        <item>결혼</item>
+        <item>육아</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="sort_array">
+        <item>최신순</item>
+        <item>조회수</item>
+        <item>좋아요수</item>
+    </string-array>
+    <string-array name="menu_array">
+        <item>내가 작성한 글</item>
+        <item>북마크</item>
+        <item>차단한 유저 관리</item>
+        <item>이용약관</item>
+        <item>개인정보취급방침</item>
+        <item>도움말</item>
+        <item>공지사항</item>
+    </string-array>
+</resources>

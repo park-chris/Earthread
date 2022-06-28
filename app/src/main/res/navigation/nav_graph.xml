@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/board_fragment"
+    android:id="@+id/nav_graph">
+
+    <keep_state_fragment android:id="@+id/board_fragment"
+        android:name="com.crystal.worldchat.fragments.BoardFragment"
+        android:label="BoardFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_board">
+
+        <action
+            android:id="@+id/action_board_to_add"
+            app:destination="@+id/add_fragment" />
+
+        <action
+            android:id="@+id/action_board_to_detail"
+            app:destination="@+id/board_detail_fragment" />
+    </keep_state_fragment>
+
+    <keep_state_fragment android:id="@+id/talk_fragment"
+        android:name="com.crystal.worldchat.fragments.TalkFragment"
+        android:label="TalkFragment"
+        tools:layout="@layout/fragment_talk">
+    </keep_state_fragment>
+
+    <keep_state_fragment android:id="@+id/my_page_fragment"
+        android:name="com.crystal.worldchat.fragments.MyPageFragment"
+        android:label="MyPageFragment"
+        tools:layout="@layout/fragment_mypage">
+    </keep_state_fragment>
+
+    <keep_state_fragment
+        android:id="@+id/add_fragment"
+        android:name="com.crystal.worldchat.fragments.AddBoardFragment"
+        android:label="AddBoardFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/board_detail_fragment"
+        android:name="com.crystal.worldchat.fragments.BoardDetailFragment"
+        android:label="BoardDetailFragment" >
+    </keep_state_fragment>
+
+    <keep_state_fragment
+        android:id="@+id/chat_detail_fragment"
+        android:name="com.crystal.worldchat.fragments.ChatDetailFragment"
+        android:label="ChatDetailFragment">
+    </keep_state_fragment>
+
+    <keep_state_fragment
+        android:id="@+id/add_chat_fragment"
+        android:name="com.crystal.worldchat.fragments.AddChatFragment"
+        android:label="AddChatFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/participate_open_chat_fragment"
+        android:name="com.crystal.worldchat.fragments.ParticipateOpenChatFragment"
+        android:label="ParticipateOpenChatFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/my_board_fragment"
+        android:name="com.crystal.worldchat.fragments.MyBoardFragment"
+        android:label="MyBoardFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/my_favorite_fragment"
+        android:name="com.crystal.worldchat.fragments.MyFavoriteFragment"
+        android:label="MyFavoriteFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/terms_of_service_fragment"
+        android:name="com.crystal.worldchat.fragments.TermsOfServiceFragment"
+        android:label="TermsOfServiceFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/privacy_information_fragment"
+        android:name="com.crystal.worldchat.fragments.PrivacyInformation"
+        android:label="PrivacyInformation" />
+
+    <keep_state_fragment
+        android:id="@+id/help_fragment"
+        android:name="com.crystal.worldchat.fragments.HelpFragment"
+        android:label="HelpFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/notification_fragment"
+        android:name="com.crystal.worldchat.fragments.NotificationFragment"
+        android:label="NotificationFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/detail_picture_fragment"
+        android:name="com.crystal.worldchat.fragments.DetailPictureFragment"
+        android:label="DetailPictureFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/my_block_fragment"
+        android:name="com.crystal.worldchat.fragments.MyBlockFragment"
+        android:label="MyBlockFragment" />
+
+
+</navigation>

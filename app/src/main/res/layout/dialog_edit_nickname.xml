@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_nickname"
+        android:textColor="@color/light_gray"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/validation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+    <EditText
+        android:id="@+id/nickname_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gradient_border_box"
+        android:hint="@string/nickname"
+        android:maxLength="10"
+        android:importantForAutofill="no"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/peach"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/validation_text" />
+
+    <TextView
+        android:id="@+id/cancel_text"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/ok_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_edit_text"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ok_text"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/change"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_edit_text"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

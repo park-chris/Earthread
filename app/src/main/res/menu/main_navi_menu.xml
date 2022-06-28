@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/board_fragment"
+        android:title="@string/board"
+        android:icon="@drawable/ic_board" />
+
+    <item
+        android:id="@+id/talk_fragment"
+        android:title="@string/talk"
+        android:icon="@drawable/ic_chat" />
+
+    <item
+        android:id="@+id/my_page_fragment"
+        android:title="@string/my_page"
+        android:icon="@drawable/ic_mypage" />
+
+</menu>

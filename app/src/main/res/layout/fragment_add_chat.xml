@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/cancel_image_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_close"
+            android:background="@color/limpidity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/cancel" />
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cancel_image_button"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/new_open_chat" />
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text1"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/light_gray"
+            android:textSize="18sp"
+            android:text="@string/chat_title"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/title_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text2"
+            android:layout_marginStart="15dp"
+            android:importantForAutofill="no"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/white"
+            android:maxLength="30"
+            android:hint="@string/chat_max_length"
+            android:textColorHint="@color/peach"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:background="@drawable/peach_border_box"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_edit_text"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/light_gray"
+            android:textSize="18sp"
+            android:text="@string/chat_info"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/information_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text3"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/white"
+            android:importantForAutofill="no"
+            android:maxLength="60"
+            android:hint="@string/chat_info_max_length"
+            android:textColorHint="@color/peach"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="@drawable/peach_border_box"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/add_chat_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/add_chat"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient_border_box_selector"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/cancel_image_button"
+        android:layout_width="30dp"
+        android:src="@drawable/ic_close"
+        android:background="@color/limpidity"
+        android:layout_gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="30dp"
+        android:contentDescription="@string/cancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_chat"
+        android:textColor="@color/white"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/title_text"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="25sp"/>
+
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/information_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/information_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/light_gray"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/people_count_text"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/people_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/add_chat_button"
+        android:textColor="@color/light_gray"
+        android:layout_marginBottom="20dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/add_chat_button"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_border_box"
+        android:text="@string/participate"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="40dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

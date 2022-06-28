@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_black" />
+
+        <EditText
+            android:id="@+id/login_id_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/peach"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/peach"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:singleLine="true"
+            android:textColor="@color/peach"
+            android:textColorHint="@color/peach"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_pw_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/peach"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/peach"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:singleLine="true"
+            android:textColor="@color/peach"
+            android:textColorHint="@color/peach"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/gradient_border_box"
+            android:text="@string/sign_in"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/registration_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/gradient_border_box"
+            android:text="@string/sign_up"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/google_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/gradient_border_box"
+            android:text="@string/google_login"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</layout>
