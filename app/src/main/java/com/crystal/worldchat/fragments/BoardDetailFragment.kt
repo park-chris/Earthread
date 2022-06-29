@@ -441,8 +441,8 @@ class BoardDetailFragment : Fragment() {
                         val me = User()
                         val other = User()
                         me.uid = auth.currentUser!!.uid
-                        other.uid = board.userId
-                        chat.users.put(board.userId, other)
+                        other.uid = reply.userId
+                        chat.users.put(reply.userId, other)
                         chat.users.put(auth.currentUser!!.uid, me)
 
                         var checked = false
